@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Epermit-CRD" verbose="1">
+    <listeners>
+        <listener class-name="com.pacificgeotech.framework.core.Listerner"/>
+
+
+    </listeners>
+
+
+
+    <test  name="Dammi-Amendment">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="automationregressiontests.DAmmi"/>
+            <class name="automationregressiontests.Full_CRD"/>
+        </classes>
+    </test>
+
+
+
+</suite>

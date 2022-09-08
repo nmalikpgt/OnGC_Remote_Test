@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Epermit-CRD" verbose="1"  >
+    <listeners>
+        <listener class-name="com.pacificgeotech.framework.core.Listerner"/>
+        <listener class-name="com.pacificgeotech.framework.Listenters.AnnotationTransformer"/>
+    </listeners>
+
+
+
+    <test  name="TestSuit-Amendment">
+        <classes>
+
+            <class name="automationregressiontests.EPMFA103001_Amendment_Facility_Technical_Land"/>
+            <class name="automationregressiontests.EPMFA105001_Amendment_Facility_Technical"/>
+            <class name="automationregressiontests.EPMGE102001_Amendment_Geophysical"/>
+
+            <class name="automationregressiontests.EPMHP101002_Historical_Submission_PIpeline"/>
+            <class name="automationregressiontests.EPMHR101001_Historical_Submission_Road"/>
+
+
+            <class name="automationregressiontests.EPMPOD102002_NEB_Short_Term_Water_Use_POD"/>
+            <class name="automationregressiontests.EPMWE104002_Amendment_WELL_Technical"/>
+            <class name="automationregressiontests.EPMWE108001_Amendment_WELL_Technical"/>
+            <class name="automationregressiontests.ForestryFullToCRD"/>
+            <class name="automationregressiontests.EPMWE104001_Amendment_WELL_Technical_Land"/>
+        </classes>
+    </test>
+
+    <test name="TestSuit-OGAA">
+        <classes>
+            <class name="automationregressiontests.Complete_New_OGAA"/>
+            <class name="automationregressiontests.Complete_New_OGAA_with_Forestry"/>
+            <class name="automationregressiontests.Complete_New_OGAA_Well"/>
+        </classes>
+    </test>
+
+    <test name="TestSuit-OGC">
+
+        <classes>
+            <class name="automationregressiontests.CompleteNEBtoCRD_OGCTEST"/>
+        </classes>
+
+    </test>
+
+
+</suite>
